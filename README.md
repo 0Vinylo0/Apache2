@@ -4,9 +4,9 @@ Esta guía proporciona una explicación detallada de Apache2, su configuración 
 
 ---
 
-<img src="./img/apache_logo.jpg" alt="GIF" align="right">
-
 ## Índice
+
+<img src="./img/apache_logo.webp" alt="GIF" align="right">
 
 1. [`Instalación`](./doc/instalacion.md): Pasos para instalar Apache en sistemas basados en Ubuntu/Debian y CentOS/RedHat.
 2. [`Estructura de Archivos y Directorios`](./doc/estructura_archivos.md): Explicación de la estructura de directorios y los archivos de configuración principales.
