@@ -6,19 +6,41 @@ Esta guía proporciona una explicación detallada de Apache2, su configuración 
 
 ## Índice
 
-1. [`Introducción`](./introduccion.md): Una descripción general sobre Apache HTTP Server y sus ventajas.
-2. [`Instalación`](./instalacion.md): Pasos para instalar Apache en sistemas basados en Ubuntu/Debian y CentOS/RedHat.
-3. [`Estructura de Archivos y Directorios`](./estructura_archivos.md): Explicación de la estructura de directorios y los archivos de configuración principales.
-4. [`Configuración Principal`](./configuracion_principal.md): Detalles sobre el archivo `apache2.conf`, `ports.conf` y otros ajustes básicos.
-5. [`Opciones de Configuración Comunes`](./opciones_comunes.md): Configuraciones como `DocumentRoot`, `Directory`, y `Virtual Hosts`.
-6. [`Configuración de Módulos`](./configuracion_modulos.md): Información sobre módulos importantes como `mod_rewrite`, `mod_proxy` y `ModSecurity`.
-7. [`Seguridad`](./seguridad.md): Configuración de SSL/TLS, autenticación básica y encabezados HTTP de seguridad.
-8. [`Logs y Monitorización`](./logs_monitorizacion.md): Gestión de logs y herramientas para monitorizar el rendimiento del servidor.
-9. [`Optimización`](./optimizacion.md): Módulos de rendimiento, configuración de workers y técnicas de caching.
-10. [`Solución de Problemas`](./solucion_problemas.md): Guía para resolver problemas comunes y diagnosticar errores.
-11. [`Recursos Adicionales`](./recursos_adicionales.md): Enlaces útiles para profundizar en la configuración y optimización de Apache.
+1. [`Instalación`](./doc/instalacion.md): Pasos para instalar Apache en sistemas basados en Ubuntu/Debian y CentOS/RedHat.
+2. [`Estructura de Archivos y Directorios`](./doc/estructura_archivos.md): Explicación de la estructura de directorios y los archivos de configuración principales.
+3. [`Configuración Principal`](./doc/configuracion_principal.md): Detalles sobre el archivo `apache2.conf`, `ports.conf` y otros ajustes básicos.
+4. [`Opciones de Configuración Comunes`](./doc/opciones_comunes.md): Configuraciones como `DocumentRoot`, `Directory`, y `Virtual Hosts`.
+5. [`Configuración de Módulos`](./doc/configuracion_modulos.md): Información sobre módulos importantes como `mod_rewrite`, `mod_proxy` y `ModSecurity`.
+6. [`Seguridad`](./doc/seguridad.md): Configuración de SSL/TLS, autenticación básica y encabezados HTTP de seguridad.
+7. [`Logs y Monitorización`](./doc/logs_monitorizacion.md): Gestión de logs y herramientas para monitorizar el rendimiento del servidor.
+8. [`Optimización`](./doc/optimizacion.md): Módulos de rendimiento, configuración de workers y técnicas de caching.
+9. [`Solución de Problemas`](./doc/solucion_problemas.md): Guía para resolver problemas comunes y diagnosticar errores.
+10. [`Recursos Adicionales`](./doc/recursos_adicionales.md): Enlaces útiles para profundizar en la configuración y optimización de Apache.
 
 ---
+
+# Introducción
+
+Apache HTTP Server, comúnmente conocido como Apache, es uno de los servidores web más utilizados en el mundo. Su popularidad se debe a su flexibilidad, estabilidad y un amplio conjunto de características que lo hacen ideal tanto para pequeños proyectos personales como para grandes entornos empresariales.
+
+## ¿Qué es Apache?
+
+Apache es un servidor web de código abierto desarrollado y mantenido por la Apache Software Foundation. Permite a los desarrolladores y administradores de sistemas alojar aplicaciones web y sitios en servidores locales o en la nube.
+
+## Ventajas de Apache
+
+- **Ampliamente Compatible:** Funciona en múltiples sistemas operativos como Linux, Windows y macOS.
+- **Modularidad:** Soporta módulos dinámicos que permiten añadir o quitar funcionalidades según las necesidades.
+- **Documentación y Comunidad:** Cuenta con una vasta documentación oficial y una comunidad activa que facilita resolver problemas y aprender.
+- **Personalización:** Ofrece configuraciones granulares que permiten ajustar permisos, optimizar rendimiento y configurar seguridad avanzada.
+- **Gratuito:** Apache es completamente gratuito bajo la licencia Apache 2.0, ideal para desarrolladores y empresas.
+
+## Usos Comunes de Apache
+
+1. **Alojamiento Web:** Hospedaje de sitios estáticos y dinámicos.
+2. **Aplicaciones Empresariales:** Ejecución de aplicaciones web empresariales que requieren alta disponibilidad y escalabilidad.
+3. **Proxy Inverso:** Gestión de tráfico entrante hacia diferentes servidores backend.
+4. **Plataforma de Desarrollo:** Ideal para entornos locales de desarrollo.
 
 ## Referencias
 
