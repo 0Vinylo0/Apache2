@@ -136,4 +136,4 @@ Proporciona estadísticas en tiempo real sobre el rendimiento del servidor.
 
 Implementar una gestión adecuada de logs y herramientas de monitorización asegura que Apache funcione de manera óptima y que los problemas se detecten a tiempo.
 
-**Fuente:** [Logs y diagnóstico en Apache](https://httpd.apache.org/docs/current/logs.html).
+
