@@ -4,6 +4,8 @@ Esta guía proporciona una explicación detallada de Apache2, su configuración 
 
 ---
 
+<img src="" alt="GIF" width="300" height="300" align="right">
+
 ## Índice
 
 1. [`Instalación`](./doc/instalacion.md): Pasos para instalar Apache en sistemas basados en Ubuntu/Debian y CentOS/RedHat.
