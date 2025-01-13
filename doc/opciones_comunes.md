@@ -158,4 +158,4 @@ ErrorDocument 500 "Error interno del servidor. Por favor, contacte al administra
 
 Estas opciones son esenciales para personalizar el comportamiento de Apache y administrar el acceso y la estructura de los sitios alojados en el servidor.
 
-**Fuente:** [Opciones comunes en Apache HTTP Server](https://httpd.apache.org/docs/current/vhosts/).
+
