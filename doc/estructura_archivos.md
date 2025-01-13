@@ -98,4 +98,4 @@ Apache HTTP Server utiliza una estructura de archivos organizada que permite ges
 
 Conocer esta estructura es esencial para administrar Apache de manera eficiente, activar módulos, y configurar sitios web. Mantén la organización y respalda los archivos importantes antes de realizar cambios.
 
-**Fuente:** [Documentación de configuración de Apache](https://httpd.apache.org/docs/current/configuring.html).
+
