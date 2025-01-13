@@ -127,4 +127,3 @@ Restringir métodos inseguros como `TRACE` y `OPTIONS` puede reducir vectores de
 
 Implementar estas configuraciones asegura que Apache sea más robusto contra amenazas comunes y vulnerabilidades.
 
-**Fuente:** [Guía de seguridad en Apache](https://httpd.apache.org/docs/current/misc/security_tips.html).
