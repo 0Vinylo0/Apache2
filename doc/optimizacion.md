@@ -175,4 +175,4 @@ sudo systemctl restart apache2
 
 Estas configuraciones y ajustes pueden marcar una gran diferencia en el rendimiento y escalabilidad de Apache.
 
-**Fuente:** [Guía de rendimiento de Apache](https://httpd.apache.org/docs/current/misc/perf-tuning.html).
+
