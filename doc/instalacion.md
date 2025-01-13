@@ -74,7 +74,3 @@ Apache también puede instalarse en Windows y macOS. En estos sistemas, se recom
    - Apache viene preinstalado en la mayoría de las versiones de macOS. Puedes iniciarlo con el comando:
    
    `sudo apachectl start`
-
----
-
-**Fuente:** [Guía de instalación en sistemas Linux](https://httpd.apache.org/docs/current/platform/unix.html).
