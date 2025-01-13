@@ -133,4 +133,4 @@ sudo systemctl restart apache2
 
 La configuración principal permite ajustar el comportamiento global de Apache, habilitar módulos y gestionar sitios de forma flexible.
 
-**Fuente:** [Directrices generales de configuración](https://httpd.apache.org/docs/current/mod/core.html).
+
