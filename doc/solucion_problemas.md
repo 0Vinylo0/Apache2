@@ -164,4 +164,3 @@ apachetop
 
 Estas estrategias cubren los problemas más comunes que puedes encontrar al administrar Apache. Si persisten los errores, consulta la [documentación oficial](https://httpd.apache.org/docs/current/misc/FAQ.html).
 
-**Fuente:** [Resolución de problemas en Apache](https://httpd.apache.org/docs/current/misc/FAQ.html).
