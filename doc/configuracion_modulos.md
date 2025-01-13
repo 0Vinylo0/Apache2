@@ -151,4 +151,3 @@ sudo systemctl restart apache2
 
 La correcta gestión y configuración de módulos es esencial para aprovechar al máximo las capacidades de Apache.
 
-**Fuente:** [Módulos en Apache HTTP Server](https://httpd.apache.org/docs/current/mod/).
