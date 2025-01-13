@@ -4,7 +4,7 @@ Esta guía proporciona una explicación detallada de Apache2, su configuración 
 
 ---
 
-<img src="./img/apache_logo.jpg" alt="GIF" width="300" height="300" align="right">
+<img src="./img/apache_logo.jpg" alt="GIF" align="right">
 
 ## Índice
 
