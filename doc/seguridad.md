@@ -8,6 +8,10 @@ La seguridad es un aspecto fundamental en la configuración de Apache HTTP Serve
 
 La implementación de SSL/TLS permite que las conexiones entre el servidor y los clientes sean seguras mediante el cifrado de datos.
 
+## SSL/TLS
+
+La implementación de SSL/TLS permite que las conexiones entre el servidor y los clientes sean seguras mediante el cifrado de datos.
+
 ### Habilitar SSL en Apache
 
 1. **Instalar los paquetes necesarios:**
@@ -48,6 +52,34 @@ La implementación de SSL/TLS permite que las conexiones entre el servidor y los
 4. **Reiniciar Apache:**
    ```bash
    sudo systemctl restart apache2
+   ```
+
+### Usar Certbot para Certificados SSL/TLS
+
+Certbot simplifica la obtención y configuración de certificados SSL/TLS de Let's Encrypt.
+
+1. **Instalar Certbot:**
+   ```bash
+   sudo apt install certbot python3-certbot-apache -y
+   ```
+
+2. **Obtener un certificado SSL/TLS:**
+   ```bash
+   sudo certbot --apache -d yourdomain.com -d www.yourdomain.com
+   ```
+   Sigue las instrucciones en pantalla para completar la configuración.
+
+3. **Verificar la configuración:**
+   Accede a tu dominio usando HTTPS: `https://yourdomain.com`. Puedes usar herramientas como [SSL Labs](https://www.ssllabs.com/ssltest/) para verificar la seguridad del certificado.
+
+4. **Renovación automática:**
+   Certbot configura automáticamente un cron job para renovar certificados. Puedes verificarlo con:
+   ```bash
+   sudo systemctl list-timers | grep certbot
+   ```
+   O probar manualmente:
+   ```bash
+   sudo certbot renew --dry-run
    ```
 
 ---
