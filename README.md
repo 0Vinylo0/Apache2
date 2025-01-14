@@ -12,12 +12,13 @@ Esta guía proporciona una explicación detallada de Apache2, su configuración 
 2. [`Estructura de Archivos y Directorios`](./doc/estructura_archivos.md): Explicación de la estructura de directorios y los archivos de configuración principales.
 3. [`Configuración Principal`](./doc/configuracion_principal.md): Detalles sobre el archivo `apache2.conf`, `ports.conf` y otros ajustes básicos.
 4. [`Opciones de Configuración Comunes`](./doc/opciones_comunes.md): Configuraciones como `DocumentRoot`, `Directory`, y `Virtual Hosts`.
-5. [`Configuración de Módulos`](./doc/configuracion_modulos.md): Información sobre módulos importantes como `mod_rewrite`, `mod_proxy` y `ModSecurity`.
-6. [`Seguridad`](./doc/seguridad.md): Configuración de SSL/TLS, autenticación básica y encabezados HTTP de seguridad.
-7. [`Logs y Monitorización`](./doc/logs_monitorizacion.md): Gestión de logs y herramientas para monitorizar el rendimiento del servidor.
-8. [`Optimización`](./doc/optimizacion.md): Módulos de rendimiento, configuración de workers y técnicas de caching.
-9. [`Solución de Problemas`](./doc/solucion_problemas.md): Guía para resolver problemas comunes y diagnosticar errores.
-10. [`Recursos Adicionales`](./doc/recursos_adicionales.md): Enlaces útiles para profundizar en la configuración y optimización de Apache.
+5. [`Restricciones`](./doc/restricciones.md): Restricciones para los `Virtual Hosts`.
+6. [`Configuración de Módulos`](./doc/configuracion_modulos.md): Información sobre módulos importantes como `mod_rewrite`, `mod_proxy` y `ModSecurity`.
+7. [`Seguridad`](./doc/seguridad.md): Configuración de SSL/TLS, autenticación básica y encabezados HTTP de seguridad.
+8. [`Logs y Monitorización`](./doc/logs_monitorizacion.md): Gestión de logs y herramientas para monitorizar el rendimiento del servidor.
+9. [`Optimización`](./doc/optimizacion.md): Módulos de rendimiento, configuración de workers y técnicas de caching.
+10. [`Solución de Problemas`](./doc/solucion_problemas.md): Guía para resolver problemas comunes y diagnosticar errores.
+11. [`Recursos Adicionales`](./doc/recursos_adicionales.md): Enlaces útiles para profundizar en la configuración y optimización de Apache.
 
 ---
 
