@@ -82,34 +82,6 @@ Los encabezados HTTP pueden proteger contra ataques comunes, como la inyección 
 
 ---
 
-## Autenticación Básica
-
-La autenticación básica protege directorios restringidos solicitando credenciales.
-
-### Configuración de Autenticación Básica
-
-1. **Crear un archivo de contraseñas:**
-   ```bash
-   sudo htpasswd -c /etc/apache2/.htpasswd usuario
-   ```
-
-2. **Configurar el directorio protegido:**
-   ```apache
-   <Directory /var/www/restringido>
-       AuthType Basic
-       AuthName "Acceso Restringido"
-       AuthUserFile /etc/apache2/.htpasswd
-       Require valid-user
-   </Directory>
-   ```
-
-3. **Reiniciar Apache:**
-   ```bash
-   sudo systemctl restart apache2
-   ```
-
----
-
 ## Deshabilitar Métodos HTTP Inseguros
 
 Restringir métodos inseguros como `TRACE` y `OPTIONS` puede reducir vectores de ataque.
