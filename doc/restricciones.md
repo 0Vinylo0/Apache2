@@ -1,7 +1,7 @@
 # Restricciones en Directivas de Apache 2.4
 
 ## Introducción
-En Apache 2.4, las restricciones de acceso y las políticas de autenticación se controlan principalmente mediante la directiva `Require` y sus variantes lógicas (`RequireAll`, `RequireAny`, `RequireNone`). Esta guía detalla cómo implementar estas restricciones y autenticaciones en tu servidor Apache.
+En Apache 2.4, las restricciones de acceso y las políticas de autenticación se controlan principalmente mediante la directiva `Require` y sus variantes lógicas (`RequireAll`, `RequireAny`, `RequireNone`).
 
 ---
 
