@@ -63,12 +63,35 @@ Certbot simplifica la obtención y configuración de certificados SSL/TLS de Let
    ```bash
    sudo certbot --apache -d yourdomain.com -d www.yourdomain.com
    ```
-   Sigue las instrucciones en pantalla para completar la configuración.
+   Sigue las instrucciones en pantalla para completar la configuración. ***IMPORTANTE*** La web o el virtual host tiene que estar en el puerto 80
 
-3. **Verificar la configuración:**
+3. **Configurar el sitio***
+    Asegúrate de que contenga algo como lo siguiente:
+   ```bash
+   <VirtualHost *:443>
+    ServerName tu-dominio.com
+    ServerAlias www.tu-dominio.com
+    DocumentRoot /var/www/seguro
+
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/tu-dominio.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/tu-dominio.com/privkey.pem
+
+    <Directory /var/www/seguro>
+        Options -Indexes +FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/seguro_error.log
+    CustomLog ${APACHE_LOG_DIR}/seguro_access.log combined
+   </VirtualHost>
+   ```
+
+5. **Verificar la configuración:**
    Accede a tu dominio usando HTTPS: `https://yourdomain.com`. Puedes usar herramientas como [SSL Labs](https://www.ssllabs.com/ssltest/) para verificar la seguridad del certificado.
 
-4. **Renovación automática:**
+6. **Renovación automática:**
    Certbot configura automáticamente un cron job para renovar certificados. Puedes verificarlo con:
    ```bash
    sudo systemctl list-timers | grep certbot
