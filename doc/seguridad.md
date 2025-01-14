@@ -8,10 +8,6 @@ La seguridad es un aspecto fundamental en la configuración de Apache HTTP Serve
 
 La implementación de SSL/TLS permite que las conexiones entre el servidor y los clientes sean seguras mediante el cifrado de datos.
 
-## SSL/TLS
-
-La implementación de SSL/TLS permite que las conexiones entre el servidor y los clientes sean seguras mediante el cifrado de datos.
-
 ### Habilitar SSL en Apache
 
 1. **Instalar los paquetes necesarios:**
