@@ -67,7 +67,7 @@ Certbot simplifica la obtención y configuración de certificados SSL/TLS de Let
 
 3. **Configurar el sitio***
     Asegúrate de que contenga algo como lo siguiente:
-   ```bash
+   ```apache
    <VirtualHost *:443>
     ServerName tu-dominio.com
     ServerAlias www.tu-dominio.com
