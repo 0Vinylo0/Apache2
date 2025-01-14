@@ -97,7 +97,7 @@ La autenticación Digest mejora la seguridad al evitar que las contraseñas viaj
 
 #### Comando para Crear Usuarios Digest
 ```bash
-htdigest -c /etc/apache2/claves/digest.txt dominio usuario1
+htdigest -c /etc/apache2/claves/digest.txt AuthName usuario
 ```
 
 ---
@@ -127,7 +127,7 @@ Configuración combinada de políticas de acceso y autenticación.
         </RequireAll>
 
         AuthType Basic
-        AuthName "Zona Restringida"
+        AuthName "ejemplo"
         AuthUserFile "/etc/apache2/claves/passwd.txt"
         Require valid-user
     </Directory>
@@ -135,7 +135,7 @@ Configuración combinada de políticas de acceso y autenticación.
     # Directorio Protegido con Digest
     <Directory "/var/www/ejemplo/digest">
         AuthType Digest
-        AuthName "Zona Protegida"
+        AuthName "ejemplo"
         AuthUserFile "/etc/apache2/claves/digest.txt"
         Require valid-user
     </Directory>
