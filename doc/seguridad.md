@@ -66,26 +66,30 @@ Certbot simplifica la obtención y configuración de certificados SSL/TLS de Let
    Sigue las instrucciones en pantalla para completar la configuración. ***IMPORTANTE*** La web o el virtual host tiene que estar en el puerto 80
 
 3. **Configurar el sitio***
-    Asegúrate de que contenga algo como lo siguiente:
+    Asegúrate de que contenga algo como lo siguiente, en nuevo archivo de configuracion:
    ```apache
-   <VirtualHost *:443>
-    ServerName tu-dominio.com
-    ServerAlias www.tu-dominio.com
-    DocumentRoot /var/www/seguro
-
-    SSLEngine on
-    SSLCertificateFile /etc/letsencrypt/live/tu-dominio.com/fullchain.pem
-    SSLCertificateKeyFile /etc/letsencrypt/live/tu-dominio.com/privkey.pem
-
-    <Directory /var/www/seguro>
-        Options -Indexes +FollowSymLinks
-        AllowOverride All
-        Require all granted
-    </Directory>
-
-    ErrorLog ${APACHE_LOG_DIR}/seguro_error.log
-    CustomLog ${APACHE_LOG_DIR}/seguro_access.log combined
-   </VirtualHost>
+      <IfModule mod_ssl.c>
+      <VirtualHost *:443>
+          ServerAdmin admin@example.com
+          ServerName example.com
+          ServerAlias example.com
+      
+          DocumentRoot /var/www/html/wordpress/
+      
+          <Directory /var/www/html/wordpress/>
+              Options Indexes FollowSymLinks
+              AllowOverride All
+              Require all granted
+          </Directory>
+      
+          ErrorLog ${APACHE_LOG_DIR}/codesales.ddns.net-error.log
+          CustomLog ${APACHE_LOG_DIR}/codesales.ddns.net-access.log combined
+      
+      SSLCertificateFile /etc/letsencrypt/live/codesales.ddns.net/fullchain.pem
+      SSLCertificateKeyFile /etc/letsencrypt/live/codesales.ddns.net/privkey.pem
+      Include /etc/letsencrypt/options-ssl-apache.conf
+      </VirtualHost>
+      </IfModule>
    ```
 
 5. **Verificar la configuración:**
