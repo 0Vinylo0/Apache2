@@ -74,9 +74,9 @@ Certbot simplifica la obtención y configuración de certificados SSL/TLS de Let
           ServerName example.com
           ServerAlias example.com
       
-          DocumentRoot /var/www/html/wordpress/
+          DocumentRoot /var/www/web/
       
-          <Directory /var/www/html/wordpress/>
+          <Directory /var/www/web/>
               Options Indexes FollowSymLinks
               AllowOverride All
               Require all granted
